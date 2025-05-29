@@ -1,0 +1,17 @@
+<!-- post -->
+<main>
+  <div class="container">
+    <% locals.postData.forEach((element)=> { %>
+
+    <div class="row mb-5 mt-5 px-2">
+      <article class="blog-post">
+        <h2 class="display-5 link-body-emphasis mb-2">
+          <%= element["postTitle"] %>
+        </h2>
+        <p class="blog-post-meta"><%= element.postDate %></p>
+        <p class="mb-5"><%= element.postStory %></p>
+      </article>
+    </div>
+    <% }); %>
+  </div>
+</main>
