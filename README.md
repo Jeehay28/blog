@@ -1,5 +1,11 @@
 # 📝 Blog 
 
+<p>
+<img src="view.png" width="30%">
+<img src="write.png" width="30%">
+<img src="newPost.png" width="30%">
+</p>
+
 A Node.js + Express blog with EJS templating and Bootstrap. Responsive and deployed with Render.
 
 ## 🔗 Live Demo
