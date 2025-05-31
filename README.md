@@ -2,7 +2,7 @@
 
 Node.js, Express, EJS, Bootstrap을 사용해 구현한 간단한 블로그
 
-<br><br><br>
+<br><br>
 
 # 🧠 캔바로 화면 구성해보기
 
@@ -11,7 +11,7 @@ Node.js, Express, EJS, Bootstrap을 사용해 구현한 간단한 블로그
 
 </p>
 
-<br><br><br>
+<br><br>
 
 # 📸 실제 구현 화면
 
