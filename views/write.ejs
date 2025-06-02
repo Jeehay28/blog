@@ -1,18 +1,18 @@
 <%- include("partials/header.ejs") %>
 
   <div class="container">
-    <form action="/publish" method="post">
-
+    <form action="<%= action %>" method="post">
       <div class="col text-end">
-        <button class="publish-btn">📑 Publish</button>
-
+        <button type="submit" class="btn btn-primary">📑 Publish</button>
       </div>
+      
+      <% if(isNewPost) { %>
       <div class="row">
         <input 
         type="text" 
         name="title" 
-        class="title-box" 
-        placeholder="Title"
+        class="title box" 
+        placeholder= "Title"
         required
         />
       </div>
@@ -20,12 +20,54 @@
       <div class="row">
         <textarea
           name="story"
-          class="story-box"         
-          placeholder="Tell your story...."
+          class="story box"         
+          placeholder= "Tell your story..."
           required
         ></textarea>
       </div>
 
+      <div class="row">
+        <input 
+        type="text" 
+        name="author" 
+        class="author box" 
+        placeholder= "Author"
+        required
+        />
+      </div>
+      <% } else { %>
+        <div class="row">
+          <input 
+          type="text" 
+          name="title" 
+          class="title box" 
+          value="<%= data.title %>" 
+          required
+          />
+        </div>
+  
+        <div class="row">
+          <textarea
+            name="story"
+            class="story box"
+            required
+          ><%= data.story %>
+        </textarea>
+        </div>
+  
+        <div class="row">
+          <input 
+          type="text" 
+          name="author" 
+          class="author box"
+          value="<%= data.author %>" 
+          required
+          />
+        </div>
+
+        <% } %>
     </form>
+  
+
   </div>
 </html>

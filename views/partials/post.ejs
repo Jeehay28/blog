@@ -1,15 +1,21 @@
 <!-- post -->
 <main>
   <div class="container">
-    <% locals.postData.forEach((element)=> { %>
+    <% locals.data.forEach((element)=> { %>
 
     <div class="row mb-5 mt-5 px-2">
       <article class="blog-post">
-        <h2 class="display-5 link-body-emphasis mb-2">
-          <%= element["postTitle"] %>
-        </h2>
-        <p class="blog-post-meta"><%= element.postDate %></p>
-        <p class="mb-5"><%= element.postStory %></p>
+        <h2 class="display-5 link-body-emphasis mb-2"><%= element.title %></h2>
+        <p class="grey-text"><%= element.date %></p>
+        <p class="mb-5"><%= element.story %></p>
+        <p class="mb-3 grey-text"><%= element.author %></p>
+
+        <a href="/edit/<%=element.id %>"
+          ><button type="button" class="btn btn-primary">Edit</button></a
+        >
+        <a href="/delete/<%=element.id %>"
+          ><button type="button" class="btn btn-danger">Delete</button></a
+        >
       </article>
     </div>
     <% }); %>
