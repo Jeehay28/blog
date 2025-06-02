@@ -21,8 +21,11 @@ Node.js, Express, EJS, Bootstrap을 사용해 구현한 간단한 블로그
 </p>
 
 <p>
+
+<img src="writing.png" width="45%">
 <img src="newPost.png" width="45%">
 </p>
+
 
 <br><br><br>
 
@@ -37,7 +40,7 @@ Node.js, Express, EJS, Bootstrap을 사용해 구현한 간단한 블로그
 
 - 서버 사이드 렌더링
 - 반응형 웹 디자인
-- 간단한 게시글 등록 및 조회
+- 게시글을 등록하고, 조회·수정·삭제할 수 있는 기능
   <br><br><br>
 
 ## 🚀 기술 스택
